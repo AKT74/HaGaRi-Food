@@ -151,5 +151,107 @@ body{
 } 
 
 i:hover{
-    color: limegreen;
+    color: limegreen;
+}
+
+.content-2{
+    min-height: 0vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.payment{
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+.title .btn, .payment .btn{
+    background: #191919;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+.title .btn:hover, .payment .btn:hover{
+    color: #191919;
+    background: limegreen;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+table{
+    padding: 10px;
+
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+
+}
+
+.student{
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.student table td i {
+    font-size: 20px;
+
+}
+
+@media screen and (max-width: 1050px){
+    .sidebar ul li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .sidebar ul li span{
+        display: none;
+    }
+    .sidebar{
+        align-items: center;
+    }
+    .sidebar ul li i{
+        font-size: 30px;
+    }
+    .sidebar ul li:hover {
+        padding: 8px 38px;
+    }
+}
+
+@media screen and (max-width: 536px){
+    .brand h1 {
+        display: none;
+    }
+    .brand i {
+        font-size: 30px;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .sidebar ul li i{
+        font-size: 20px;
+    }
 }
